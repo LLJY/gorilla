@@ -931,6 +931,54 @@ api_inference_model_map = {
         is_fc_model=True,
         underscore_to_dot=True,
     ),
+    "sealion-ft-1": ModelConfig(
+        model_name="sealion-ft-1",  # Must match --alias in llama.cpp
+        display_name="SEALION Fine-Tuned",
+        url="",
+        org="Custom",
+        license="apache-2.0",
+        model_handler=OpenAICompletionsHandler,  # Use Chat Completions API
+        input_price=None,
+        output_price=None,
+        is_fc_model=False,  # Prompt-based (not native function calling)
+        underscore_to_dot=False,
+    ),
+    "sealion-ft-2": ModelConfig(
+        model_name="sealion-ft-2",  # Must match --alias in llama.cpp
+        display_name="SEALION Fine-Tuned 2",
+        url="",
+        org="Custom",
+        license="apache-2.0",
+        model_handler=OpenAICompletionsHandler,
+        input_price=None,
+        output_price=None,
+        is_fc_model=False,
+        underscore_to_dot=False,
+    ),
+    "sealion-base": ModelConfig(
+        model_name="sealion-base",  # Must match --alias in llama.cpp
+        display_name="SEALION Base",
+        url="",
+        org="Custom",
+        license="apache-2.0",
+        model_handler=OpenAICompletionsHandler,
+        input_price=None,
+        output_price=None,
+        is_fc_model=False,
+        underscore_to_dot=False,
+    ),
+    "sealion-ft-3": ModelConfig(
+        model_name="sealion-ft-3",  # Must match --alias in llama.cpp
+        display_name="SEALION Fine-Tuned 3",
+        url="",
+        org="Custom",
+        license="apache-2.0",
+        model_handler=OpenAICompletionsHandler,
+        input_price=None,
+        output_price=None,
+        is_fc_model=False,
+        underscore_to_dot=False,
+    ),
     "qwen3-8b": ModelConfig(
         model_name="qwen3-8b",
         display_name="Qwen3-8B (Prompt)",
